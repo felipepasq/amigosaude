@@ -1,10 +1,10 @@
-import Login from "./pages/Login/Login";
+import Home from "./pages/Home/Home";
 import { Routes, Route } from "react-router-dom";
 
 const Router = (): JSX.Element => {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   );
 };
