@@ -52,14 +52,44 @@ const ModalForm = styled.div`
     border: 1px solid #dddfe2;
     font-family: ${({ theme }) => theme.fonts.text};
   }
-`;
 
-const Date = styled.div`
-  margin-top: 8px;
-  display: flex;
-  flex-direction: column;
-  div {
+  p {
+    color: #bf1650;
+    margin-right: auto;
+  }
+
+  p::before {
+    display: inline;
+    content: "⚠ ";
   }
 `;
 
-export { ModalContainer, ModalContent, ModalForm, Date };
+const Date = styled.div`
+  display: flex;
+  flex-direction: column;
+  span {
+    margin: 12px 0 12px;
+  }
+  div {
+    grid-row: auto;
+    gap: 20px;
+  }
+
+  select {
+    height: 32px;
+    width: 124px;
+    padding: 0 8px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+  }
+`;
+const RegisterButton = styled.button`
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  background-color: ${({ theme }) => theme.colors.light_green};
+  border-radius: 6px;
+  font-size: 20px;
+  color: ${({ theme }) => theme.colors.white};
+`;
+export { ModalContainer, ModalContent, ModalForm, Date, RegisterButton };

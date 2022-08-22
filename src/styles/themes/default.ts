@@ -5,6 +5,7 @@ export const defaultTheme = {
     dark_gray: "#212427",
     gray: "#6F6F6F",
     light_gray: "#F0F2F5",
+    light_green: "#42b72a",
   },
   fonts: {
     text: "Poppins",
